@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS</title>
+	<link rel="stylesheet" type="text/css" href="themes/default/css/bootstrap.rtl.min.css">
+	<link rel="stylesheet" type="text/css" href="themes/default/css/bootstrap-icons.css">
+	<link rel="stylesheet" href="themes/default/css/jquery-ui.min.css">
+
+	<script src="themes/default/js/jquery.min.js"></script>
+	<script src="themes/default/js/jquery-ui.min.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="themes/default/js/bootstrap.min.js"></script>
+	
+	<script src="themes/default/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="themes/default/css/style.css">
+</html>
+<body >
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg" id="navbar" style="background-color: #e3f2fd;">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">یادداشت</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<!--<li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Home</a>
+	        </li> -->
+	        <li class="nav-item">
+	          <a class="nav-link" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">افزودن یادداشت</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            تنظیمات
+	          </a>
+	          <ul class="dropdown-menu">
+	            <div id="setting">
+	            	سربرگ <input type="checkbox" name="" id="headerON">
+	            </div>
+				<!--<li><a class="dropdown-item" href="#">Another action</a></li>
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+	          </ul>
+	        </li>
+			<!--<li class="nav-item">
+	          <a class="nav-link disabled">Disabled</a>
+	        </li> -->
+	      </ul>
+	      <!-- <form class="d-flex" role="search">
+	        <input class="form-control me-2" type="search" placeholder="جستجو" aria-label="Search">
+	        <button class="btn btn-outline-success" type="submit">جستجو</button>
+	      </form> -->
+	    </div>
+	  </div>
+	</nav>
+	<!-- modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">یادداشت جدید</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div id="main">
+	        	<textarea name="" rows="10" autofocus placeholder="یادداشت جدید" class="form-control" id="note" ></textarea>
+	        	<br>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+	        <button type="button" class="btn btn-primary" id="btn" data-bs-dismiss="modal">یادداشت جدید</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- main -->
+	<div id="note_Box"></div>
+	<div style="position: fixed;transform: translate(-50%,-50%);top: 50%;left: 50%;z-index: 10000;width: 1px;height: 1px;background-color: red;"></div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+*{
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: vazir;;
+	src: url(../fonts/Vazir-Regular.woff2);
+}
+@font-face{
+	font-family: Bvazir;;
+	font-weight: bold;
+	src: url(../fonts/Vazir-Bold.woff2);
+}
+html{
+	font-family: "vazir";
+	direction: rtl;
+}
+body{
+	font-family: "vazir";
+	direction: rtl;
+}
+#navbar,
+#setting{
+	z-index: 1000;
+}
+#headerON{
+	display: inline-block;
+	background-color: red;
+}
+.note{
+	margin-top: 30px;
+	background-color: yellow;
+	width: 325px;
+	height: 320px;
+	padding-top: 3%;
+	padding-right: 1%;
+	padding-left: 1%;
+	font-size: 2rem;
+	direction: rtl;
+	background-image: url(../images/noteBG5.png);
+	background-position: center center;
+	background-size: cover;
+	box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
+/*	position: fixed;
+	top: 60px;*/
+}
+#note_Box{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.edit_note{
+	margin-top: -13%;
+	margin-right: -11px;
+	font-size: 1.7rem;
+	display: none;
+	width: 107%;
+	height: 113%;
+}
+.note p{
+	margin: 0px;
+}
+.header{
+	width: 109.5%;
+	height: 30px;
+	background-color: black;
+	margin-right: -5%;
+	margin-top: -24%;
+	margin-bottom: 14%;
+	display: flex;
+}
+.close,
+.edit,
+.dropdownSettingNote,
+.setting_note,
+.save{
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	width: 29px;
+	height: 29px;
+	cursor: pointer;
+	border-radius: 10px ;
+	display: flex;
+	justify-content: center;
+	line-height: 30px;
+}	
+.close:hover,
+.edit:hover,
+.save:hover,
+/*.setting_note:hover,*/
+.dropdownSettingNote:hover{
+	background-color: white;
+	color: black;
+}
+.save{
+	width: 50px;
+	display: none;
+	font-size: 15px;
+}
+.change_bgColor,
+.change_fgColor,
+.lock{
+	margin-top: 5px;
+	color: black;
+	font-size: 10px;
+}
+#change_fgColor_txt{
+	margin-left: 5px;
+}
+.lock{
+	width: 22px;
+	height: 150%;
+	font-size: 10px;
+}
+.setting_note{
+	margin-right: 220px;
+}
+.setting_note button{
+	width: 39px;
+	height: 29px;
+	padding: 0px;
+	margin-right: 10px;
+	background-color: transparent;
+	color: white;
+	border: none;
+}
